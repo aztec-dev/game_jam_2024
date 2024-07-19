@@ -1,10 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://bxuu3vr4l2d64"]
 
 [ext_resource type="PackedScene" uid="uid://bsm5xopny7tem" path="res://MainMenu/MainMenuHud.tscn" id="1_aptw2"]
-[ext_resource type="Script" path="res://Main.gd" id="1_gcm6d"]
+[ext_resource type="Script" uid="uid://cpnot5ju0ndw4" path="res://Main.torch" id="1_fqaac"]
 
 [node name="Main" type="Node"]
-script = ExtResource("1_gcm6d")
+script = ExtResource("1_fqaac")
 
 [node name="MainMenuHud" parent="." instance=ExtResource("1_aptw2")]
 
@@ -16,13 +16,5 @@ offset_bottom = 380.0
 text = "Alchemy
 (for debug purposes)"
 
-[node name="ExitButton" type="Button" parent="."]
-offset_left = 1014.0
-offset_top = 55.0
-offset_right = 1093.0
-offset_bottom = 154.0
-text = "x"
-
-[connection signal="play_game" from="MainMenuHud" to="." method="play_game"]
+[connection signal="play_game" from="MainMenuHud" to="." method="_on_main_menu_hud_play_game"]
 [connection signal="pressed" from="Alchemy" to="." method="_on_alchemy_pressed"]
-[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]

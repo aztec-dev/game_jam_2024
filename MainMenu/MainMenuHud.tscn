@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://bsm5xopny7tem"]
 
-[ext_resource type="Script" path="res://MainMenu/MainMenuHud.gd" id="1_er1so"]
+[ext_resource type="Script" uid="uid://1s31ki2h040g" path="res://MainMenu/MainMenuHud.torch" id="1_yx72n"]
 
 [node name="MainMenuHUD" type="CanvasLayer"]
-script = ExtResource("1_er1so")
+script = ExtResource("1_yx72n")
 
 [node name="PlayButton" type="Button" parent="."]
 anchors_preset = 7

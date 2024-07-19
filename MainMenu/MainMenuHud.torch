@@ -1,0 +1,83 @@
+[orchestration type="OScript" load_steps=7 format=2 uid="uid://1s31ki2h040g"]
+
+[obj type="OScriptFunction" id="OScriptFunction_olijt"]
+guid = "21C50355-CB29-418F-B608-C9EA9C8BF101"
+method = {
+"name": &"_on_play_button_pressed",
+"return": {}
+}
+id = 0
+
+[obj type="OScriptGraph" id="OScriptGraph_q8wjq"]
+graph_name = &"EventGraph"
+offset = Vector2(-191.12, -265.564)
+zoom = 0.683013
+flags = 8
+nodes = Array[int]([0, 1, 2])
+functions = Array[int]([0])
+
+[obj type="OScriptNodeEvent" id="OScriptNodeEvent_2ank4"]
+function_id = "21C50355-CB29-418F-B608-C9EA9C8BF101"
+id = 0
+size = Vector2(277, 66)
+pin_data = Array[Dictionary]([{
+"pin_name": &"ExecOut",
+"dir": 1,
+"flags": 4
+}])
+
+[obj type="OScriptNodeCallMemberFunction" id="OScriptNodeCallMemberFunction_65a74"]
+function_name = &"emit"
+target_type = 26
+flags = 42
+method = {
+"name": &"emit",
+"flags": 21
+}
+variable_arg_count = 0
+chain = false
+id = 1
+size = Vector2(130, 124)
+position = Vector2(400, 0)
+pin_data = Array[Dictionary]([{
+"pin_name": &"ExecIn",
+"flags": 4
+}, {
+"pin_name": &"ExecOut",
+"dir": 1,
+"flags": 4
+}, {
+"pin_name": &"target",
+"type": 26,
+"flags": 2050,
+"label": "Signal"
+}])
+
+[obj type="OScriptNodeVariableGet" id="OScriptNodeVariableGet_1n17l"]
+variable_name = &"Play"
+id = 2
+size = Vector2(128, 66)
+position = Vector2(180, 100)
+pin_data = Array[Dictionary]([{
+"pin_name": &"value",
+"type": 26,
+"dir": 1,
+"flags": 2050,
+"label": "Play",
+"usage": 2
+}])
+
+[obj type="OScriptVariable" id="OScriptVariable_hkw00"]
+name = "Play"
+category = "Default"
+classification = "type:Signal"
+type = 26
+default_value = Signal()
+
+[resource]
+base_type = &"CanvasLayer"
+variables = Array[OScriptVariable]([SubResource("OScriptVariable_hkw00")])
+functions = Array[OScriptFunction]([SubResource("OScriptFunction_olijt")])
+connections = Array[int]([0, 0, 1, 0, 2, 0, 1, 1])
+nodes = Array[OScriptNode]([SubResource("OScriptNodeEvent_2ank4"), SubResource("OScriptNodeCallMemberFunction_65a74"), SubResource("OScriptNodeVariableGet_1n17l")])
+graphs = Array[OScriptGraph]([SubResource("OScriptGraph_q8wjq")])
