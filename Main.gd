@@ -1,11 +1,20 @@
 extends Node
 var alchemyRef = preload("res://Alchemy/PotionMakingHud.tscn").instantiate()
-# Called when the node enters the scene tree for the first time.
+
 func _ready():
-	pass # Replace with function body.
-
-
+	alchemyRef.
+	$Alchemy.hide()
+	$ExitButton.hide()
 
 func play_game():
 	$MainMenuHud.hide()
+	$Alchemy.show()
+	$ExitButton.show()
+
+
+func _on_alchemy_pressed():
 	add_child(alchemyRef)
+
+func _on_exit_button_pressed():
+	remove_child(alchemyRef)
+

@@ -1,5 +1,5 @@
 extends Node2D
-
+signal exit
 
 const SlotClass = preload("res://Alchemy/Slot.gd")
 @onready var inventory_slots = $GridContainer
@@ -32,3 +32,14 @@ func _input(event):
 		holding_item.global_position = get_global_mouse_position()
 
 
+
+
+func _on_button_pressed():
+	$Label.text = "t"
+	pass # Replace with function body.
+
+
+
+func _on_exit_pressed():
+	exit.emit()
+	pass # Replace with function body.
