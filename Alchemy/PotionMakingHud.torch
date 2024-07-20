@@ -1,0 +1,18 @@
+[orchestration type="OScript" load_steps=3 format=2 uid="uid://csyssfxrp5ju3"]
+
+[obj type="OScriptGraph" id="OScriptGraph_5m5s1"]
+graph_name = &"EventGraph"
+offset = Vector2(-270.356, -284.874)
+zoom = 0.909091
+flags = 8
+
+[obj type="OScriptSignal" id="OScriptSignal_j6v7i"]
+method = {
+"name": &"Exit"
+}
+signal_name = &"Exit"
+
+[resource]
+base_type = &"Node2D"
+signals = Array[OScriptSignal]([SubResource("OScriptSignal_j6v7i")])
+graphs = Array[OScriptGraph]([SubResource("OScriptGraph_5m5s1")])
