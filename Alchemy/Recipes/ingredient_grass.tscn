@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqs0ym8iube4m"]
+
+[ext_resource type="Script" uid="uid://b5qst0lfj064d" path="res://Alchemy/Recipes/Crafting_recipe.torch" id="1_c0wpq"]
+
+[node name="Ingredient_Grass" type="Node"]
+editor_description = "
+"
+script = ExtResource("1_c0wpq")
+Name = "Grass"
+Description = "Healing grass"
+
+[node name="Texture" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0

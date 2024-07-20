@@ -9,8 +9,8 @@ id = 0
 
 [obj type="OScriptGraph" id="OScriptGraph_q8wjq"]
 graph_name = &"EventGraph"
-offset = Vector2(-29.2188, -307.966)
-zoom = 0.999999
+offset = Vector2(-70.0221, -72.3581)
+zoom = 0.683013
 flags = 8
 nodes = Array[int]([0, 2])
 functions = Array[int]([0])

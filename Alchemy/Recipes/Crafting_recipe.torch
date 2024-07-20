@@ -1,0 +1,42 @@
+[orchestration type="OScript" load_steps=6 format=2 uid="uid://b5qst0lfj064d"]
+
+[obj type="OScriptGraph" id="OScriptGraph_m35rw"]
+graph_name = &"EventGraph"
+offset = Vector2(0, -19.0303)
+zoom = 1.21
+flags = 8
+
+[obj type="OScriptVariable" id="OScriptVariable_y7x37"]
+name = "Name"
+category = "Default"
+exported = true
+classification = "type:String"
+type = 4
+default_value = ""
+
+[obj type="OScriptVariable" id="OScriptVariable_qfdxf"]
+name = "Description"
+category = "Default"
+exported = true
+classification = "type:String"
+type = 4
+default_value = ""
+
+[obj type="OScriptVariable" id="OScriptVariable_7bway"]
+name = "IsCraftable"
+category = "Default"
+exported = true
+classification = "type:bool"
+type = 1
+default_value = false
+
+[obj type="OScriptVariable" id="OScriptVariable_h4o7i"]
+name = "Thumbnail"
+category = "Default"
+classification = "class:Texture"
+type = 24
+
+[resource]
+base_type = &"Node"
+variables = Array[OScriptVariable]([SubResource("OScriptVariable_y7x37"), SubResource("OScriptVariable_qfdxf"), SubResource("OScriptVariable_7bway"), SubResource("OScriptVariable_h4o7i")])
+graphs = Array[OScriptGraph]([SubResource("OScriptGraph_m35rw")])

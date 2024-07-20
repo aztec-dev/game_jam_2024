@@ -36,7 +36,7 @@ func _input(event):
 
 
 func _on_button_pressed():
-	$Label.text = "t"
+	$Label.text = "Mixed"
 	pass # Replace with function body.
 
 

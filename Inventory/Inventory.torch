@@ -1,0 +1,104 @@
+[orchestration type="OScript" load_steps=12 format=2 uid="uid://blnevnnfovhvi"]
+
+[obj type="OScriptFunction" id="OScriptFunction_uiisp"]
+guid = "9DA78B99-16CD-4F6C-B4EC-4CDA8A2B8FA5"
+method = {
+"name": &"AddToInventory",
+"args": [{
+"name": &"ItemToBeAdded",
+"usage": 131078
+}]
+}
+user_defined = true
+id = 0
+
+[obj type="OScriptFunction" id="OScriptFunction_0j34w"]
+guid = "B55DA838-D9F2-40CB-B810-BF41E117DA1F"
+method = {
+"name": &"QueryInventory"
+}
+user_defined = true
+id = 1
+
+[obj type="OScriptFunction" id="OScriptFunction_l7mfy"]
+guid = "BD253F89-CBE5-4066-883F-AACF74BD9D49"
+method = {
+"name": &"RemoveFromInventory"
+}
+user_defined = true
+id = 2
+
+[obj type="OScriptGraph" id="OScriptGraph_wa5y7"]
+graph_name = &"EventGraph"
+offset = Vector2(-28, -28)
+flags = 8
+
+[obj type="OScriptGraph" id="OScriptGraph_a4uw0"]
+graph_name = &"AddToInventory"
+offset = Vector2(-138, -271.75)
+flags = 22
+nodes = Array[int]([0])
+functions = Array[int]([0])
+
+[obj type="OScriptGraph" id="OScriptGraph_5ipp0"]
+graph_name = &"QueryInventory"
+offset = Vector2(-480, -247.75)
+flags = 22
+nodes = Array[int]([1])
+functions = Array[int]([1])
+
+[obj type="OScriptGraph" id="OScriptGraph_be53u"]
+graph_name = &"RemoveFromInventory"
+offset = Vector2(-480, -247.75)
+flags = 22
+nodes = Array[int]([2])
+functions = Array[int]([2])
+
+[obj type="OScriptNodeFunctionEntry" id="OScriptNodeFunctionEntry_4ovpg"]
+function_id = "9DA78B99-16CD-4F6C-B4EC-4CDA8A2B8FA5"
+id = 0
+size = Vector2(192, 93)
+pin_data = Array[Dictionary]([{
+"pin_name": &"ExecOut",
+"dir": 1,
+"flags": 4
+}, {
+"pin_name": &"ItemToBeAdded",
+"dir": 1,
+"flags": 2,
+"usage": 131078
+}])
+
+[obj type="OScriptNodeFunctionEntry" id="OScriptNodeFunctionEntry_07pbj"]
+function_id = "B55DA838-D9F2-40CB-B810-BF41E117DA1F"
+id = 1
+size = Vector2(186, 66)
+pin_data = Array[Dictionary]([{
+"pin_name": &"ExecOut",
+"dir": 1,
+"flags": 4
+}])
+
+[obj type="OScriptNodeFunctionEntry" id="OScriptNodeFunctionEntry_qf7k7"]
+function_id = "BD253F89-CBE5-4066-883F-AACF74BD9D49"
+id = 2
+size = Vector2(239, 66)
+pin_data = Array[Dictionary]([{
+"pin_name": &"ExecOut",
+"dir": 1,
+"flags": 4
+}])
+
+[obj type="OScriptVariable" id="OScriptVariable_iaeel"]
+name = "Inventory"
+category = "Default"
+classification = "type:PackedInt64Array"
+type = 31
+default_value = PackedInt64Array()
+
+[resource]
+base_type = &"Node"
+variables = Array[OScriptVariable]([SubResource("OScriptVariable_iaeel")])
+functions = Array[OScriptFunction]([SubResource("OScriptFunction_uiisp"), SubResource("OScriptFunction_0j34w"), SubResource("OScriptFunction_l7mfy")])
+nodes = Array[OScriptNode]([SubResource("OScriptNodeFunctionEntry_4ovpg"), SubResource("OScriptNodeFunctionEntry_07pbj"), SubResource("OScriptNodeFunctionEntry_qf7k7")])
+graphs = Array[OScriptGraph]([SubResource("OScriptGraph_wa5y7"), SubResource("OScriptGraph_a4uw0"), SubResource("OScriptGraph_5ipp0"), SubResource("OScriptGraph_be53u")])
