@@ -6,6 +6,7 @@ const SlotClass = preload("res://Alchemy/Slot.gd")
 var holding_item = null
 
 func _ready():
+	#self.MainHUD.connect(get_parent()._on_exit_pressed)
 	for inv_slot in inventory_slots.get_children():
 		inv_slot.gui_input.connect(slot_gui_input.bind(inv_slot))
 		
@@ -40,6 +41,7 @@ func _on_button_pressed():
 
 
 
+
 func _on_exit_pressed():
+	#$".".queue_free()
 	exit.emit()
-	pass # Replace with function body.

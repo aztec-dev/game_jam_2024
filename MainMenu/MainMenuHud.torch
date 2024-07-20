@@ -1,19 +1,18 @@
-[orchestration type="OScript" load_steps=7 format=2 uid="uid://1s31ki2h040g"]
+[orchestration type="OScript" load_steps=6 format=2 uid="uid://1s31ki2h040g"]
 
 [obj type="OScriptFunction" id="OScriptFunction_olijt"]
 guid = "21C50355-CB29-418F-B608-C9EA9C8BF101"
 method = {
-"name": &"_on_play_button_pressed",
-"return": {}
+"name": &"_on_play_button_pressed"
 }
 id = 0
 
 [obj type="OScriptGraph" id="OScriptGraph_q8wjq"]
 graph_name = &"EventGraph"
-offset = Vector2(-191.12, -265.564)
-zoom = 0.683013
+offset = Vector2(-29.2188, -307.966)
+zoom = 0.999999
 flags = 8
-nodes = Array[int]([0, 1, 2])
+nodes = Array[int]([0, 2])
 functions = Array[int]([0])
 
 [obj type="OScriptNodeEvent" id="OScriptNodeEvent_2ank4"]
@@ -26,19 +25,11 @@ pin_data = Array[Dictionary]([{
 "flags": 4
 }])
 
-[obj type="OScriptNodeCallMemberFunction" id="OScriptNodeCallMemberFunction_65a74"]
-function_name = &"emit"
-target_type = 26
-flags = 42
-method = {
-"name": &"emit",
-"flags": 21
-}
-variable_arg_count = 0
-chain = false
-id = 1
-size = Vector2(130, 124)
-position = Vector2(400, 0)
+[obj type="OScriptNodeEmitSignal" id="OScriptNodeEmitSignal_a253e"]
+signal_name = "Play"
+id = 2
+size = Vector2(135, 66)
+position = Vector2(380, 0)
 pin_data = Array[Dictionary]([{
 "pin_name": &"ExecIn",
 "flags": 4
@@ -46,38 +37,18 @@ pin_data = Array[Dictionary]([{
 "pin_name": &"ExecOut",
 "dir": 1,
 "flags": 4
-}, {
-"pin_name": &"target",
-"type": 26,
-"flags": 2050,
-"label": "Signal"
 }])
 
-[obj type="OScriptNodeVariableGet" id="OScriptNodeVariableGet_1n17l"]
-variable_name = &"Play"
-id = 2
-size = Vector2(128, 66)
-position = Vector2(180, 100)
-pin_data = Array[Dictionary]([{
-"pin_name": &"value",
-"type": 26,
-"dir": 1,
-"flags": 2050,
-"label": "Play",
-"usage": 2
-}])
-
-[obj type="OScriptVariable" id="OScriptVariable_hkw00"]
-name = "Play"
-category = "Default"
-classification = "type:Signal"
-type = 26
-default_value = Signal()
+[obj type="OScriptSignal" id="OScriptSignal_b5q7c"]
+method = {
+"name": &"Play"
+}
+signal_name = &"Play"
 
 [resource]
 base_type = &"CanvasLayer"
-variables = Array[OScriptVariable]([SubResource("OScriptVariable_hkw00")])
 functions = Array[OScriptFunction]([SubResource("OScriptFunction_olijt")])
-connections = Array[int]([0, 0, 1, 0, 2, 0, 1, 1])
-nodes = Array[OScriptNode]([SubResource("OScriptNodeEvent_2ank4"), SubResource("OScriptNodeCallMemberFunction_65a74"), SubResource("OScriptNodeVariableGet_1n17l")])
+signals = Array[OScriptSignal]([SubResource("OScriptSignal_b5q7c")])
+connections = Array[int]([0, 0, 2, 0])
+nodes = Array[OScriptNode]([SubResource("OScriptNodeEvent_2ank4"), SubResource("OScriptNodeEmitSignal_a253e")])
 graphs = Array[OScriptGraph]([SubResource("OScriptGraph_q8wjq")])

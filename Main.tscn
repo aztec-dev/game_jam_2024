@@ -6,7 +6,7 @@
 [node name="Main" type="Node"]
 script = ExtResource("1_fqaac")
 
-[node name="MainMenuHud" parent="." instance=ExtResource("1_aptw2")]
+[node name="MainMenuHUD" parent="." instance=ExtResource("1_aptw2")]
 
 [node name="Alchemy" type="Button" parent="."]
 offset_left = 919.0
@@ -16,5 +16,5 @@ offset_bottom = 380.0
 text = "Alchemy
 (for debug purposes)"
 
-[connection signal="play_game" from="MainMenuHud" to="." method="_on_main_menu_hud_play_game"]
+[connection signal="Play" from="MainMenuHUD" to="." method="_on_main_menu_hud_play"]
 [connection signal="pressed" from="Alchemy" to="." method="_on_alchemy_pressed"]

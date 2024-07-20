@@ -2,7 +2,6 @@ extends Node
 var alchemyRef = preload("res://Alchemy/PotionMakingHud.tscn").instantiate()
 
 func _ready():
-	alchemyRef.
 	$Alchemy.hide()
 	$ExitButton.hide()
 
