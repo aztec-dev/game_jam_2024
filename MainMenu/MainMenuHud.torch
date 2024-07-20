@@ -9,7 +9,7 @@ id = 0
 
 [obj type="OScriptGraph" id="OScriptGraph_q8wjq"]
 graph_name = &"EventGraph"
-offset = Vector2(-70.0221, -72.3581)
+offset = Vector2(-161.184, -309.326)
 zoom = 0.683013
 flags = 8
 nodes = Array[int]([0, 2])
@@ -41,7 +41,8 @@ pin_data = Array[Dictionary]([{
 
 [obj type="OScriptSignal" id="OScriptSignal_b5q7c"]
 method = {
-"name": &"Play"
+"name": &"Play",
+"return": {}
 }
 signal_name = &"Play"
 

@@ -13,8 +13,7 @@ offset_left = 919.0
 offset_top = 285.0
 offset_right = 1102.0
 offset_bottom = 380.0
-text = "Alchemy
-(for debug purposes)"
+text = "Alchemy"
 
 [connection signal="Play" from="MainMenuHUD" to="." method="_on_main_menu_hud_play"]
 [connection signal="pressed" from="Alchemy" to="." method="_on_alchemy_pressed"]

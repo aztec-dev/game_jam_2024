@@ -2,13 +2,14 @@
 
 [obj type="OScriptGraph" id="OScriptGraph_5m5s1"]
 graph_name = &"EventGraph"
-offset = Vector2(-4, -28)
-zoom = 0.909091
+offset = Vector2(-102.21, -54.9594)
+zoom = 0.424098
 flags = 8
 
 [obj type="OScriptSignal" id="OScriptSignal_j6v7i"]
 method = {
-"name": &"Exit"
+"name": &"Exit",
+"return": {}
 }
 signal_name = &"Exit"
 

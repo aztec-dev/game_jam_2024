@@ -2,8 +2,7 @@
 
 [obj type="OScriptGraph" id="OScriptGraph_m35rw"]
 graph_name = &"EventGraph"
-offset = Vector2(0, -19.0303)
-zoom = 1.21
+zoom = 1.61051
 flags = 8
 
 [obj type="OScriptVariable" id="OScriptVariable_y7x37"]

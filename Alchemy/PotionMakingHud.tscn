@@ -21,7 +21,9 @@ curve = SubResource("Curve_150x4")
 texture = SubResource("CurveTexture_35faa")
 
 [node name="MainHUD" type="Node2D"]
+scale = Vector2(0.75, 0.75)
 script = ExtResource("1_w3vn6")
+metadata/_edit_group_ = true
 
 [node name="TextureRect" type="TextureRect" parent="."]
 anchors_preset = 8
