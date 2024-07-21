@@ -1,0 +1,50 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsm5xopny7tem"]
+
+[ext_resource type="Script" path="res://MainMenuHUD.gd" id="1_w0q38"]
+
+[node name="MainMenuHUD" type="CanvasLayer"]
+script = ExtResource("1_w0q38")
+
+[node name="PlayButton" type="Button" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -52.5
+offset_top = -174.5
+offset_right = 52.5
+offset_bottom = -94.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 48
+text = "Play"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 18.13
+offset_top = -136.92
+offset_right = 250.13
+offset_bottom = -73.92
+grow_vertical = 0
+theme_override_font_sizes/font_size = 21
+text = "Made by:
+Azariah & SummationX"
+
+[node name="Label2" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_top = 132.65
+offset_right = 20.0
+offset_bottom = 155.65
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 60
+text = "Title
+"
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]

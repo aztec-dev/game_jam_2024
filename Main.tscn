@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://bw5ytnltknxp8"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_leev4"]
+[ext_resource type="PackedScene" uid="uid://bsm5xopny7tem" path="res://MainMenuHUD.tscn" id="2_ykvd1"]
+[ext_resource type="PackedScene" uid="uid://blr6584kic2f0" path="res://World.tscn" id="3_wtsqg"]
+[ext_resource type="PackedScene" uid="uid://tr73jq8h6iha" path="res://Player/Player.tscn" id="4_gy3ns"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_leev4")
+
+[node name="MainMenuHUD" parent="." instance=ExtResource("2_ykvd1")]
+
+[node name="World" parent="." instance=ExtResource("3_wtsqg")]
+visible = false
+
+[node name="Player" parent="World" instance=ExtResource("4_gy3ns")]
+visible = false
+
+[node name="SpawnLocation" type="Marker2D" parent="World"]
+position = Vector2(580, 325)
+
+[connection signal="play" from="MainMenuHUD" to="." method="_on_main_menu_hud_play"]
