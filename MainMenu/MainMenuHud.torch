@@ -41,8 +41,7 @@ pin_data = Array[Dictionary]([{
 
 [obj type="OScriptSignal" id="OScriptSignal_b5q7c"]
 method = {
-"name": &"Play",
-"return": {}
+"name": &"Play"
 }
 signal_name = &"Play"
 

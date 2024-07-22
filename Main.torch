@@ -110,7 +110,6 @@ target_class_name = "Node"
 target_type = 24
 method = {
 "name": &"add_child",
-"return": {},
 "default_args": [false, 0],
 "args": [{
 "name": &"node",
@@ -262,7 +261,6 @@ target_class_name = "Node"
 target_type = 24
 method = {
 "name": &"remove_child",
-"return": {},
 "args": [{
 "name": &"node",
 "type": 24,
@@ -300,7 +298,6 @@ target_class_name = "Node"
 target_type = 24
 method = {
 "name": &"remove_child",
-"return": {},
 "args": [{
 "name": &"node",
 "type": 24,
@@ -338,6 +335,7 @@ target_class_name = "Node"
 target_type = 24
 method = {
 "name": &"add_child",
+"return": {},
 "default_args": [false, 0],
 "args": [{
 "name": &"node",
@@ -502,7 +500,6 @@ target_class_name = "Node"
 target_type = 24
 method = {
 "name": &"add_child",
-"return": {},
 "default_args": [false, 0],
 "args": [{
 "name": &"node",
@@ -602,6 +599,7 @@ target_class_name = "Node"
 target_type = 24
 method = {
 "name": &"remove_child",
+"return": {},
 "args": [{
 "name": &"node",
 "type": 24,
