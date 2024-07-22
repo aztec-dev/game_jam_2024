@@ -1,5 +1,7 @@
 extends Area2D
 
+class_name Player
+
 var speed = 200
 
 # Called when the node enters the scene tree for the first time.

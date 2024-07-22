@@ -14,5 +14,6 @@ func _process(delta):
 func _on_main_menu_hud_play():
 	$World.show()
 	$World/Player.show()
+	$CanvasLayer.show()
 	
 	$World/Player.position = $World/SpawnLocation.position

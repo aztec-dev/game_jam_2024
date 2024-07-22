@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Resource_item" load_steps=3 format=3 uid="uid://bn46k8pt7m5s"]
+
+[ext_resource type="Script" path="res://Items/Resource/Resource_item.gd" id="1_4q5cl"]
+[ext_resource type="Texture2D" uid="uid://c28osfs70k2am" path="res://icon.svg" id="2_h52bp"]
+
+[resource]
+script = ExtResource("1_4q5cl")
+display_name = "Rock"
+texture = ExtResource("2_h52bp")

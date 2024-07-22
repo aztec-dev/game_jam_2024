@@ -1,12 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://tr73jq8h6iha"]
+[gd_scene load_steps=5 format=3 uid="uid://tr73jq8h6iha"]
 
 [ext_resource type="Script" path="res://Player/Player.gd" id="1_etmdp"]
 [ext_resource type="Texture2D" uid="uid://c28osfs70k2am" path="res://icon.svg" id="1_lfugg"]
+[ext_resource type="Script" path="res://Player/Inventory.gd" id="3_oqia0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g4w2w"]
 size = Vector2(128, 130)
 
-[node name="Player" type="Area2D"]
+[node name="Player" type="Area2D" groups=["player"]]
 script = ExtResource("1_etmdp")
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -27,3 +28,6 @@ texture = ExtResource("1_lfugg")
 shape = SubResource("RectangleShape2D_g4w2w")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Inventory" type="Node" parent="."]
+script = ExtResource("3_oqia0")

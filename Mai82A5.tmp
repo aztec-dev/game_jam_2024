@@ -21,7 +21,6 @@ visible = false
 position = Vector2(580, 325)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="ResourceDisplay" parent="CanvasLayer" instance=ExtResource("5_beqo2")]
 

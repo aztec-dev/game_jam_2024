@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bt75p1r2kyuom"]
+
+[ext_resource type="Script" path="res://UI/ResourceItemDisplay.gd" id="1_f8m8i"]
+[ext_resource type="Texture2D" uid="uid://c28osfs70k2am" path="res://icon.svg" id="2_vb1ou"]
+
+[node name="ResourceItemDisplay" type="HBoxContainer"]
+offset_right = 87.0
+offset_bottom = 73.375
+script = ExtResource("1_f8m8i")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("2_vb1ou")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+text = "0"
