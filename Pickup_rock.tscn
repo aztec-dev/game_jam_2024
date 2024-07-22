@@ -1,19 +1,33 @@
 [gd_scene load_steps=5 format=3 uid="uid://k35avlp33a6s"]
 
 [ext_resource type="Script" path="res://Items/Pickup_rock.gd" id="1_3ysr3"]
-[ext_resource type="Texture2D" uid="uid://c28osfs70k2am" path="res://icon.svg" id="1_qe65q"]
 [ext_resource type="Resource" uid="uid://bn46k8pt7m5s" path="res://Items/Resource/resource_rock.tres" id="2_tocjx"]
+[ext_resource type="Script" path="res://TextureRect.gd" id="3_lg2k6"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_uckmv"]
-radius = 16.1245
+radius = 69.2604
 
 [node name="Pickup_rock" type="Area2D"]
+z_index = 1
+position = Vector2(71, 71)
 script = ExtResource("1_3ysr3")
 resource_type = ExtResource("2_tocjx")
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.175, 0.175)
-texture = ExtResource("1_qe65q")
+metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_uckmv")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -65.0
+offset_top = -63.5
+offset_right = 65.0
+offset_bottom = 63.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("3_lg2k6")

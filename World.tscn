@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://blr6584kic2f0"]
+[gd_scene load_steps=6 format=3 uid="uid://blr6584kic2f0"]
 
 [ext_resource type="Texture2D" uid="uid://0hy78p32mm7k" path="res://Icons & Images/Inside_C.png" id="1_1miuw"]
 [ext_resource type="PackedScene" uid="uid://k35avlp33a6s" path="res://Pickup_rock.tscn" id="2_1xlwi"]
+[ext_resource type="Script" path="res://Button.gd" id="3_640js"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lfcyb"]
 texture = ExtResource("1_1miuw")
@@ -1435,3 +1436,14 @@ position = Vector2(274, 237)
 
 [node name="Pickup_rock2" parent="." instance=ExtResource("2_1xlwi")]
 position = Vector2(124, 172)
+
+[node name="Button" type="Button" parent="."]
+offset_left = 875.0
+offset_top = 187.0
+offset_right = 950.0
+offset_bottom = 218.0
+text = "Alchemy
+"
+script = ExtResource("3_640js")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
